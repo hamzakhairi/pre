@@ -1,0 +1,22 @@
+
+
+searchable_array_bag.cpp
+searchable_tree_bag.cpp
+set
+
+------
+
+    -> array_bag
+    -> searchable_bag 
+    ----> searchable_array_bag 
+
+    -> tree_bag 
+    -> searchable_bag 
+    ----> searchable_tree_bag 
+
+------
+
+    
+
+
+
