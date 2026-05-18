@@ -21,17 +21,17 @@ int main(int argc, char *argv[])
     int grid[2][height + 2][width + 2];
     char c;
 
-    for (int d = 0; d < 2; d++)
+    for (int d = 0; d < 2 ; d++)
     {
-        for (int y = 0; y < height + 2; y++)
+        for (int y = 0; y < height + 2 ; y++)
         {
             for (int x = 0; x < width + 2; x++)
             {
                 grid[d][y][x] = 0;
             }
         }
-        
     }
+
     while (read(0, &c, 1))
     {
         if (c == 'w' && y > 1)
@@ -59,9 +59,9 @@ int main(int argc, char *argv[])
                 int nbours = 0;
                 for (int dy = -1; dy <= 1; dy++)
                 {
-                    for (int dx = -1 ; dx <= 1; dx++)
+                    for (int dx = -1; dx <= 1; dx++)
                     {
-                        if (dy != 0 && dx != 0)
+                        if (dy != 0 || dx != 0)
                             nbours += grid[cur][y + dy][x + dx];
                     }
                 }
@@ -73,17 +73,17 @@ int main(int argc, char *argv[])
         }
     }
     int final = iter % 2;
-        for (int y = 1; y <= height; y++)
+    for (int y = 1; y <= height; y++)
+    {
+        for (int x = 1; x <= width; x++)
         {
-            for (int x = 1; x <= width; x++)
-            {
-                if (grid[final][y][x])
-                    putchar('O');
-                else
-                    putchar(' ');
-            }
-            putchar('\n');
+            if (grid[final][y][x])
+                putchar('O');
+            else
+                putchar(' ');
         }
-
+        putchar('\n');
+    }
+    return 0;
 }
 
