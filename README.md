@@ -8,6 +8,7 @@
 - polyset : my code is valid for the exam
 - vect2
 
+![Description](ChatGPT.png)
 ## lvl01 - not yet done
 
 1 aleatory exercise between those 2:
