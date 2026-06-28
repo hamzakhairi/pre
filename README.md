@@ -1,6 +1,6 @@
 # 42_Exam-Rank-05
 
-## lvl00 - pass
+## lvl00 - pass hamza
 
 1 aleatory exercise between those 3:
 
